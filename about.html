@@ -13,6 +13,7 @@ team:
    bio: Designer/part time model
    description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus ex ut, eaque ratione amet neque ipsum.
    profile_image: /images/profile-2.jpeg
+about-video-id: L8YJtvHGeUU
 ---
 
 <section class="tall-60 grid bg-green">
@@ -45,6 +46,15 @@ team:
 
     {% endfor %}
 
+    </div>
+
+</section>
+
+<section class="padded bg-green center">
+    <h2 class="editable"> Watch our corny meet the team video </h2>
+    <p class="emphasis editable"> Featuring the j-bomb the terrier </p>
+    <div class="padded-1">
+        <div class='embed-container'><iframe src='https://www.youtube.com/embed//{{page.about-video-id}}' frameborder='0' allowfullscreen></iframe></div>
     </div>
 
 </section>
