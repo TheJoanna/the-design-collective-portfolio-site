@@ -46,9 +46,15 @@ features:
 
 <!-- Dark intro section  -->
 <section class="grid bg-green light-text padded">
-    <div class="col-7_sm-12 bg-image tall-50" style="background-image: url('{{page.photo_image}}');">
+    
+    {% for photo in page.photo_image %}
 
+    <div class="col-7_sm-12 bg-image tall-50">
+        <img src="{{ photo.photo_image }}">
     </div> 
+
+    {% endfor %}
+
     <div class="col-5_sm-12-middle padded editable">
         <h2 class="editable"> More than just another agency. </h2>
         <p class="editable"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis nulla ipsam doloremque optio fugiat culpa. Repudiandae magnam numquam expedita, dolorum similique distinctio praesentium sint ad vero fugit rem explicabo fugiat.</p>
